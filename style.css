@@ -1,0 +1,723 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+
+/* =========================
+   WELCOME SCREEN
+========================= */
+
+.welcome-screen{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(60,20,30,0.75),
+        rgba(60,20,30,0.75)
+    ),
+    url("images/1.png");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    padding:30px;
+}
+
+.small-text{
+    font-size:14px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.welcome-screen h1{
+    font-size:48px;
+    margin:10px 0;
+    text-shadow:0 4px 15px rgba(0,0,0,0.35);
+}
+
+.couple-name{
+    font-size:22px;
+    font-weight:bold;
+    margin:5px 0 15px;
+}
+
+.welcome-screen .couple-name{
+    text-shadow:0 3px 10px rgba(0,0,0,0.3);
+}
+
+.invite-text{
+    font-size:18px;
+    max-width:600px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.welcome-screen .small-text{
+    opacity:0.9;
+}
+
+
+/* =========================
+   OPEN INVITATION BUTTON
+========================= */
+
+#openInvitation{
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+
+    background:white;
+    color:#3c141e;
+
+    font-size:16px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+#openInvitation:hover{
+    background:#f3d6b3;
+    transform:scale(1.05);
+}
+
+
+/* =========================
+   INVITATION
+========================= */
+
+#invitation{
+    min-height:100vh;
+
+    display:none;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:
+    linear-gradient(
+        rgba(255,248,245,0.88),
+        rgba(255,248,245,0.88)
+    ),
+    url("images/1.png") center/cover no-repeat;
+
+    color:#3c141e;
+
+    animation:fadeIn 1.2s ease;
+}
+
+
+/* =========================
+   FADE IN ANIMATION
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* =========================
+   INVITATION HEADINGS
+========================= */
+
+#invitation h2{
+    font-size:48px;
+    margin:10px 0;
+
+    font-family:Georgia, serif;
+
+    color:#5c202b;
+}
+
+#invitation .small-text{
+    font-size:14px;
+    letter-spacing:4px;
+    color:#8b4a55;
+}
+
+#invitation .couple-name{
+    font-size:28px;
+
+    font-family:Georgia, serif;
+
+    color:#8b4a55;
+}
+
+
+/* =========================
+   WEDDING DATE
+========================= */
+
+.wedding-date{
+    font-size:24px;
+    font-weight:bold;
+
+    margin:15px 0 5px;
+
+    color:#5c252b;
+}
+
+.wedding-place{
+    font-size:18px;
+    color:#6b454c;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.events{
+    margin-top:40px;
+
+    width:90%;
+    max-width:900px;
+}
+
+.events h3{
+    font-family:Georgia, serif;
+
+    font-size:32px;
+
+    color:#5c202b;
+
+    margin-bottom:25px;
+}
+
+
+/* Decorative line */
+
+.events h3::after,
+.venue-section h3::after,
+.countdown-section h3::after,
+.gallery-section h3::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:2px;
+
+    background:#8b4a55;
+
+    margin:12px auto 0;
+}
+
+
+/* Event Cards */
+
+.event-card{
+    display:inline-block;
+
+    vertical-align:top;
+
+    width:28%;
+    min-width:200px;
+
+    margin:10px;
+    padding:20px;
+
+    background:rgba(255,255,255,0.8);
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(60,20,30,0.15);
+
+    transition:0.3s;
+
+    backdrop-filter:blur(5px);
+}
+
+.event-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 10px 25px rgba(60,20,30,0.20);
+}
+
+.event-card h4{
+    font-family:Georgia,serif;
+
+    font-size:22px;
+
+    color:#8b4a55;
+
+    margin:0 0 10px;
+
+    letter-spacing:0.5px;
+}
+
+.event-card p{
+    margin:6px 0;
+
+    color:#5c202b;
+
+    line-height:1.5;
+}
+
+
+/* =========================
+   VENUE
+========================= */
+
+.venue-section{
+    margin-top:50px;
+
+    padding:35px 25px;
+
+    text-align:center;
+}
+
+.venue-section h3{
+    font-family:Georgia, serif;
+
+    font-size:32px;
+
+    color:#5c202b;
+
+    margin-bottom:15px;
+}
+
+.venue-name{
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#8b4a55;
+
+    margin:8px 0;
+}
+
+.venue-address{
+    font-size:17px;
+
+    color:#6b454c;
+
+    margin-bottom:20px;
+}
+
+.map-button{
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#5c202b;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:0.3s;
+}
+
+.map-button:hover{
+    background:#8b4a55;
+
+    transform:translateY(-2px);
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section{
+    margin-top:30px;
+
+    padding:30px 20px 60px;
+
+    text-align:center;
+}
+
+.countdown-section h3{
+    font-family:Georgia, serif;
+
+    font-size:30px;
+
+    color:#5c202b;
+
+    margin-bottom:25px;
+}
+
+.countdown{
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width:90px;
+
+    padding:18px 10px;
+
+    background:rgba(255,255,255,0.85);
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(60,20,30,0.15);
+
+    transition:0.3s;
+}
+
+.time-box:hover{
+    transform:translateY(-4px);
+}
+
+.time-box span{
+    display:block;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#5c202b;
+}
+
+.time-box small{
+    color:#8b4a55;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   WEDDING DETAILS
+========================= */
+
+.wedding-details{
+    padding:60px 20px;
+
+    text-align:center;
+
+    background:#fff8f5;
+
+    color:#3c141e;
+}
+
+.wedding-details h2{
+    font-size:36px;
+
+    margin-bottom:15px;
+}
+
+.details-container{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+}
+
+.detail-card{
+    width:250px;
+
+    padding:30px 20px;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.10);
+
+    transition:0.3s;
+}
+
+.detail-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.15);
+}
+
+.detail-card h3{
+    font-size:22px;
+
+    margin-bottom:10px;
+}
+
+.detail-card p{
+    font-size:16px;
+
+    line-height:1.6;
+}
+
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp-section{
+    text-align:center;
+
+    padding:60px 20px;
+
+    margin-top:40px;
+}
+
+.rsvp-section h2{
+    font-size:32px;
+
+    margin-bottom:15px;
+}
+
+.rsvp-section p{
+    font-size:18px;
+
+    margin-bottom:25px;
+}
+
+#rsvpButton{
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#6b2434;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 6px 18px rgba(107,36,52,0.25);
+}
+
+#rsvpButton:hover{
+    background:#8f354b;
+
+    transform:translateY(-3px) scale(1.05);
+
+    box-shadow:
+    0 10px 25px rgba(107,36,52,0.35);
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section{
+    width:100%;
+
+    margin-top:50px;
+
+    padding:60px 20px;
+
+    text-align:center;
+}
+
+.gallery-section h3{
+    font-family:Georgia, serif;
+
+    font-size:32px;
+
+    color:#5c202b;
+
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+.gallery img{
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:3px solid rgba(139,74,85,0.35);
+
+    padding:5px;
+
+    background:white;
+
+    box-shadow:
+    0 5px 20px rgba(60,20,30,0.15);
+
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.06);
+
+    box-shadow:
+    0 10px 30px rgba(60,20,30,0.25);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    padding:50px 20px 30px;
+
+    text-align:center;
+
+    background:#3c141e;
+
+    color:white;
+}
+
+.footer h3{
+    font-family:Georgia, serif;
+
+    font-size:28px;
+
+    margin-bottom:12px;
+}
+
+.footer p{
+    font-size:16px;
+
+    margin:8px 0;
+}
+
+.footer-copy{
+    margin-top:25px;
+
+    font-size:13px;
+
+    opacity:0.7;
+}
+
+
+/* =========================
+   TABLET / MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    #invitation{
+        padding:20px 10px;
+    }
+
+    #invitation h2{
+        font-size:34px;
+    }
+
+    .event-card{
+        width:90%;
+
+        margin:10px auto;
+
+        display:block;
+    }
+
+    .venue-section{
+        padding:30px 15px;
+    }
+
+    .countdown{
+        gap:8px;
+    }
+
+    .time-box{
+        width:70px;
+
+        padding:15px 8px;
+    }
+
+    .time-box span{
+        font-size:24px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+
+        gap:10px;
+
+        padding:0 10px;
+    }
+
+    .gallery img{
+        height:140px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:600px){
+
+    .welcome-screen h1{
+        font-size:36px;
+    }
+
+    .couple-name{
+        font-size:20px;
+    }
+
+    .invite-text{
+        font-size:16px;
+
+        padding:0 15px;
+    }
+
+    #openInvitation{
+        padding:10px 22px;
+
+        font-size:15px;
+    }
+
+}
