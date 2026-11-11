@@ -9,9 +9,6 @@ body{
 }
 
 
-/* =========================
-   WELCOME SCREEN
-========================= */
 
 .welcome-screen{
     min-height:100vh;
@@ -69,9 +66,7 @@ body{
 }
 
 
-/* =========================
-   OPEN INVITATION BUTTON
-========================= */
+
 
 #openInvitation{
     padding:12px 28px;
@@ -93,9 +88,6 @@ body{
 }
 
 
-/* =========================
-   INVITATION
-========================= */
 
 #invitation{
     min-height:100vh;
@@ -123,10 +115,6 @@ body{
 }
 
 
-/* =========================
-   FADE IN ANIMATION
-========================= */
-
 @keyframes fadeIn{
 
     from{
@@ -142,9 +130,6 @@ body{
 }
 
 
-/* =========================
-   INVITATION HEADINGS
-========================= */
 
 #invitation h2{
     font-size:48px;
@@ -170,10 +155,6 @@ body{
 }
 
 
-/* =========================
-   WEDDING DATE
-========================= */
-
 .wedding-date{
     font-size:24px;
     font-weight:bold;
@@ -188,10 +169,6 @@ body{
     color:#6b454c;
 }
 
-
-/* =========================
-   EVENTS
-========================= */
 
 .events{
     margin-top:40px;
@@ -211,8 +188,6 @@ body{
 }
 
 
-/* Decorative line */
-
 .events h3::after,
 .venue-section h3::after,
 .countdown-section h3::after,
@@ -230,8 +205,6 @@ body{
     margin:12px auto 0;
 }
 
-
-/* Event Cards */
 
 .event-card{
     display:inline-block;
@@ -283,10 +256,6 @@ body{
     line-height:1.5;
 }
 
-
-/* =========================
-   VENUE
-========================= */
 
 .venue-section{
     margin-top:50px;
@@ -347,9 +316,7 @@ body{
 }
 
 
-/* =========================
-   COUNTDOWN
-========================= */
+
 
 .countdown-section{
     margin-top:30px;
@@ -415,9 +382,6 @@ body{
 }
 
 
-/* =========================
-   WEDDING DETAILS
-========================= */
 
 .wedding-details{
     padding:60px 20px;
@@ -482,9 +446,6 @@ body{
 }
 
 
-/* =========================
-   RSVP
-========================= */
 
 .rsvp-section{
     text-align:center;
@@ -536,10 +497,6 @@ body{
     0 10px 25px rgba(107,36,52,0.35);
 }
 
-
-/* =========================
-   GALLERY
-========================= */
 
 .gallery-section{
     width:100%;
@@ -602,10 +559,6 @@ body{
 }
 
 
-/* =========================
-   FOOTER
-========================= */
-
 .footer{
     padding:50px 20px 30px;
 
@@ -639,9 +592,7 @@ body{
 }
 
 
-/* =========================
-   TABLET / MOBILE
-========================= */
+
 
 @media (max-width:768px){
 
@@ -694,9 +645,7 @@ body{
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+
 
 @media (max-width:600px){
 
